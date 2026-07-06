@@ -1,14 +1,28 @@
 ---
 name: Homework
-about: DSA practice assignment
+about: Assign homework after a tutor session
 title: "[HW] "
 labels: homework
 assignees: ''
 ---
 
+<!--
+  TUTOR: fill this in after your session.
+  Students: implement in <Topic>/<your-name>/, self-test, then comment below when done.
+  Full workflow: https://github.com/<org>/DSA-Practice/blob/main/README.md#homework-tracking-github-issues
+-->
+
 ## Topic
 
 <!-- e.g. Linked Lists -->
+
+## Tutor
+
+<!-- Your name -->
+
+## Due date
+
+<!-- e.g. July 13, 2026 -->
 
 ## Tasks
 
@@ -17,20 +31,38 @@ assignees: ''
 
 ## Spec
 
-<!-- Describe expected behavior, constraints, complexity requirements -->
+<!-- Expected behavior, time/space complexity, constraints -->
+<!-- Link to topic README for full details -->
 
 ## Reference
 
-<!-- Link to topic README or linkedLists.md -->
+- Theory: `<!-- e.g. LinkedLists/linkedLists.md -->`
+- Homework & test cases: `<!-- e.g. LinkedLists/README.md -->`
 
 ## Manual test cases
 
-<!-- Copy test table from topic README -->
+<!-- Copy the test tables from the topic README so students see them without leaving the issue -->
 
-## When done
+## When done (students)
 
 Comment below with:
 
-1. Your folder path (e.g. `LinkedLists/<your-name>/`)
-2. Language used
-3. Self-check: did you pass the manual tests? (yes/no)
+```
+Done — <Topic>/<your-name>/ — <language> — self-checked ✓
+```
+
+If stuck partway:
+
+```
+Partial — <Topic>/<your-name>/ — <language> — <what's done / what's stuck>
+```
+
+**Do not close this issue** — the tutor closes it after the deadline.
+
+## Submissions
+
+<!-- Tutor: optionally track here, or just read comments above -->
+
+| Name | Folder | Language | Status |
+|------|--------|----------|--------|
+| | | | |
