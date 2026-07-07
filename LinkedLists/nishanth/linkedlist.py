@@ -132,11 +132,35 @@ class LinkedList:
 
     def reverse_inplace(self):
         """Reverse the list in O(n) time, O(1) space. See linkedLists.md."""
-        raise NotImplementedError
+        prev_node = None
+        curr_node = self.head
+
+        while curr_node is not None:
+            next_node = curr_node.next
+            curr_node.next = prev_node
+
+            prev_node = curr_node
+            curr_node = next_node
+
+        self.head = prev_node
+
 
     def find_max(self):
         """Return the maximum value, or None if the list is empty."""
-        raise NotImplementedError
+        if self.head is None:
+            print("Linked List is Empty")
+            return
+        else:
+            temp = self.head
+            max = self.head.data
+
+            while temp is not None:
+                if temp.data > max:
+                    max = temp.data
+
+                temp = temp.next
+
+            return max
 
 
 def main():
@@ -163,10 +187,13 @@ def main():
     rev = L.rev()
     print(rev)
 
+    L.insert_tail(100)
+
     # HW #1 — uncomment after implementing
-    # L.reverse_inplace()
-    # print(L)
-    # print(L.find_max())
+    print(L)
+    L.reverse_inplace()
+    print(L)
+    print(L.find_max())
 
 
 if __name__ == "__main__":
