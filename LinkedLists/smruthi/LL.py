@@ -13,7 +13,7 @@ def find_max(head):
             if cur.data > mv:
                 mv=cur.data
             cur=cur.next
-        return mv
+       # return mv
 
 def reverse_inplace(head):
     if not head :
