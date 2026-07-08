@@ -55,6 +55,7 @@ class linkedList{
 
             tail->next = newNode;
             tail = newNode;
+            this->n++;
         }
 
         void remove_tail(){
@@ -69,6 +70,7 @@ class linkedList{
 
             delete tail;
             tail = cur;
+            this->n--;
         }
 
         void inplace_reverse(){
@@ -96,6 +98,17 @@ class linkedList{
             }
             std::cout << std::endl;
         }
+
+        int max(){
+            if(!head) return 0;
+            int m = head->value;
+            Node* cur = head->next;
+            while(cur){
+                m = std::max(m, cur->value);
+                cur = cur->next;
+            }
+            return m;
+        }
 };
 
 int main(){
@@ -107,4 +120,5 @@ int main(){
     ll.print();
     ll.inplace_reverse();
     ll.print();
+    std::cout << ll.max() << std::endl;
 }
