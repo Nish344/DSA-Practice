@@ -262,22 +262,6 @@ If you could not complete everything
 Partial — Queues/<your-name>/ — Python — Completed Problem 1, working on Problem 2
 ```
 
----
-
-# Reference
-
-Theory Notes
-
-```
-Queues/queues.md
-```
-
-Homework
-
-```
-Queues/README.md
-```
-
 Good luck!
 
 Remember:
